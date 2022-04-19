@@ -1,0 +1,250 @@
+
+.area-trabajo{
+    display:grid;
+    grid-area: 
+    "header"
+    "nav" 
+    "main"
+    "footer" 
+     
+    ;
+
+}
+
+header, nav, main,footer{
+    border: solid 1px red;
+    background-color: rgba(163,162,155,0.43461134453781514);
+}
+header{
+    /* general style */
+    grid-area: "header";
+    background: rgb(243,185,244);
+    background: radial-gradient(circle, rgba(243,185,244,1) 0%, rgba(163,162,155,0.43461134453781514) 70%);
+
+    /* custom style */
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+
+
+}
+aside {
+    grid-area: "aside";
+}
+
+nav{
+    /* general style */
+    grid-area: "nav";
+
+    /* custom style */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    
+}
+.imagen-navegador{
+    display: none;
+    transform: rotate(15deg);
+}
+.menu{
+    list-style-type: none;
+    font-size: 20px;
+    
+}
+.menu li {
+    margin: 20px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* propiedad de duracion */
+    transition: 1s;
+
+}
+.menu li:hover{
+    font-size: 24px;
+
+}
+.reflexion{
+    margin: 20px 20px;
+    text-align: center;
+    font-family:'Square Peg', cursive;
+    font-size: 28px;
+}
+.reflexion span{
+    color: #c05050;
+}
+main{
+    /* general style */
+    grid-area: "main";
+
+    /* custom style */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(163,162,155,0.43461134453781514);
+}
+footer{
+    grid-area: "footer";
+}
+/* imagenes en el footer */
+.imagenes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 10vh;
+    animation-name: moverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    
+}
+@keyframes moverse {
+    0%{
+        transform: skew(10deg);
+    }
+    10%{
+        transform: skew(20deg);
+    }
+    20%{
+        transform: skew(40deg);
+    }
+    30%{
+        transform: skew(20deg);
+    }
+    40%{
+        transform: skew(10deg);
+    }
+    50%{
+        transform: skew(0deg);
+    }
+    60%{
+        transform: skew(-10deg);
+    }
+    70%{
+        transform: skew(-20deg);
+    }
+    80%{
+        transform: skew(-40deg);
+    }
+    90%{
+        transform: skew(-20deg);
+    }
+    100%{
+        transform: skew(-10deg);
+    }
+}
+.imagenes img{
+
+    width: 60px;
+}
+.portada{
+    width: 150px;
+    padding: 10px;
+}
+.contacto{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.contacto li{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    list-style-type: none;
+}
+.contacto ol li img{
+    width: 20px;
+    transform: translate(-30px);
+}
+
+.encabezado-imagen{
+    margin: 10px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.imagen-pantalla {
+    
+    width :300px;
+}
+@media screen and (min-width: 768px) {
+   
+	.area-trabajo{
+        display:grid;
+        grid-area: 
+        "header header"
+        "nav aside" 
+        "main main"
+        "footer footer"
+         
+        ;
+        /* background-color: aqua; */
+    }
+    
+    header{
+        grid-area: "header";
+        background-color: blue;
+        color: aquamarine;
+   
+        flex-direction: row;
+        justify-content:space-between;
+        align-items:center;
+        font-size: 30px;
+    }
+    /* nav{
+        grid-area: "nav";
+        flex-wrap: wrap;
+        text-align: left;
+        
+    }
+    aside{
+        grid-area: "aside";
+    }
+    footer{
+        grid-area: "footer";
+    }
+    main{
+        grid-area: "main";
+    } */
+    .imagen-navegador{
+        display:block;
+        width: 40%;
+        
+    }
+    /* imagenes en el footer */
+    .imagenes{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        height: 15vh;
+        /* transform:skew(25deg, 36deg) ; */
+    }
+    .imagenes img{
+
+        width: 150px;
+    }
+    .imagen-pantalla {
+    
+        width :600px;
+    }
+
+    .encabezado-imagen{
+        font-size: 25px;
+    }
+    /* texto en el index */
+    .reflexion{
+        font-size: 34px;
+        font-family: 'Square Peg', cursive;
+        
+    }
+    .contacto li{
+        font-size: 20px;
+    }
+    /* imagenes del contacto redes sociales */
+    .contacto ol li img{
+        width: 30px;
+        transform: translate(-50px);
+
+    }
+
+}

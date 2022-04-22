@@ -14,8 +14,11 @@ header, nav, main,footer,aside{
 header{
     
     grid-column: 1/4;
-    background: rgb(243,185,244);
-    background: radial-gradient(circle, rgba(243,185,244,1) 0%, rgba(163,162,155,0.43461134453781514) 70%);
+    background: rgb(245,37,128);
+    background: linear-gradient(214deg, rgba(245,37,128,1) 0%, rgba(147,21,177,1) 50%, rgba(136,69,252,1) 100%);
+
+    /* background: rgb(243,185,244);
+    background: radial-gradient(circle, rgba(243,185,244,1) 0%, rgba(163,162,155,0.43461134453781514) 70%); */
 
     height: 40vh;
     display: flex;
@@ -34,7 +37,19 @@ nav{
 }
 .imagen-navegador{
     display: none;
-    /* transform: translate(360px,-250px); */
+    transform:rotate(12deg);
+}
+.area-trabajo h1 {
+    transition: 2s;
+}
+.area-trabajo h1:hover{
+    font-size: 55px;
+}
+.area-trabajo h2 {
+    transition: 2s;
+}
+.area-trabajo h2:hover{
+    font-size: 75px;
 }
 .menu{
     list-style-type: none;
@@ -49,8 +64,13 @@ nav{
 
 }
 .menu li:hover{
-    font-size: 24px;
+    font-size: 34px;
 
+}
+.reflexion-inicio{
+    font-family: 'Updock', cursiva;
+    font-size: 18px;
+    text-align: center;
 }
 .reflexion{
     margin: 20px 20px;
@@ -61,19 +81,18 @@ nav{
 .reflexion span{
     color: #c05050;
 }
+.reflexion-inicio{
+    font-family: 'Updock', cursiva;
+    font-size: 28px;
+}
 main{
-    /* general style */
-    /* grid-area: "main"; */
     grid-column: 1/4;
-
-    /* custom style */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background-color: rgba(163,162,155,0.43461134453781514);
 }
 footer{
-    /* grid-area: "footer"; */
     grid-column: 1/4;
 }
 /* imagenes en el footer */
@@ -84,8 +103,8 @@ footer{
     height: 10vh;
     animation-name: moverse;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-duration: 2s;
+    /* animation-timing-function: ease-in-out; */
+    animation-duration: 3s;
     
 }
 @keyframes moverse {
@@ -158,7 +177,10 @@ footer{
 aside {
     display: flex;
     justify-content: center;
-        
+    align-items: center;        
+}
+.imagen-mia{
+    display: none;
 }
 @media screen and (min-width: 768px) {
    
@@ -241,6 +263,10 @@ aside {
         font-family: 'Square Peg', cursive;
         
     }
+    .reflexion-inicio{
+        font-family: 'Updock', cursiva;
+        font-size: 38px;
+    }
     .contacto li{
         font-size: 20px;
     }
@@ -266,8 +292,9 @@ aside {
         ;
     } */
     .portada{
-        width: 250px;
-        padding: 10px;
+        display: none;
+        /* width: 250px;
+        padding: 10px; */
     }
     header{
         grid-area: "header";
@@ -294,9 +321,13 @@ aside {
         
     }
     .imagen-navegador{
-        display:block;
+        display:none;
         width: 300px;
         
+    }
+    .imagen-mia{
+        display: block;
+        width: 320px;
     }
     /* imagenes en el footer */
     .imagenes{

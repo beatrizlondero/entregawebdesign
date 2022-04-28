@@ -75,11 +75,14 @@ nav{
     font-size: 34px;
 
 }
-.reflexion-inicio{
-    font-family: 'Updock', cursiva;
-    font-size: 18px;
+.textcenter{
+    font-family: 'Updock', cursive;
+    font-size: 22px;
     text-align: center;
+    background-color: #fcfeff;
+
 }
+
 .reflexion{
     margin: 20px 20px;
     text-align: center;
@@ -89,10 +92,7 @@ nav{
 .reflexion span{
     color: #c05050;
 }
-.reflexion-inicio{
-    font-family: 'Updock', cursiva;
-    font-size: 28px;
-}
+
 main{
     grid-column: 1/4;
     display: flex;
@@ -200,7 +200,7 @@ aside {
 .programer{
     font-size: 20px;
     text-align: center;
-    color: #a15669;
+    color: #9316ec;
 }
 @media screen and (min-width: 768px) {
    
@@ -222,7 +222,7 @@ aside {
         text-align: center;
         font-family:'Square Peg', cursive;
         font-size: 80px;
-        color: #a15669;
+        color: hsl(272, 54%, 58%);
         
     }    
     .portada{
@@ -294,10 +294,10 @@ aside {
         font-family: 'Square Peg', cursive;
         
     }
-    .reflexion-inicio{
-        font-family: 'Updock', cursiva;
-        font-size: 38px;
-    }
+   .textcenter{
+
+       font-size: 38px;
+   }
     .contacto li{
         font-size: 20px;
     }
@@ -376,7 +376,9 @@ aside {
     
         width :800px;
     }
-
+    .textcenter{
+        font-size: 48;
+    }
     .encabezado-imagen{
         font-size: 40px;
     }
@@ -398,5 +400,5 @@ aside {
     .programer{
         font-size: 45px;
     }
-
+    
 }

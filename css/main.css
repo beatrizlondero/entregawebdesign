@@ -1,0 +1,148 @@
+.myname {
+  margin: 10px;
+  text-align: center;
+  font-family: 'Square Peg', cursive;
+  font-size: 45px;
+  color: #3096e4;
+  transition: 2s; }
+  .myname .myname:hover {
+    font-size: 95px; }
+
+.programer {
+  font-size: 22px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  color: #189197;
+  transition: 2s; }
+  .programer .programer:hover {
+    font-size: 50px; }
+
+.textcenter {
+  font-size: 33px;
+  font-family: 'square peg';
+  text-align: center;
+  background: #f3f3f7;
+  background: linear-gradient(90deg, #f3f3f7 0%, #dae9f1 43%, #f3f7f7 100%); }
+
+.imagenes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 10vh;
+  animation-name: moverse;
+  animation-iteration-count: infinite;
+  animation-duration: 3s; }
+  .imagenes img {
+    width: 60px; }
+
+@keyframes moverse {
+  0% {
+    transform: skew(5deg); }
+  10% {
+    transform: skew(10deg); }
+  20% {
+    transform: skew(15deg); }
+  30% {
+    transform: skew(10deg); }
+  40% {
+    transform: skew(5deg); }
+  50% {
+    transform: skew(0deg); }
+  60% {
+    transform: skew(-5deg); }
+  70% {
+    transform: skew(-10deg); }
+  80% {
+    transform: skew(-15deg); }
+  90% {
+    transform: skew(-10deg); }
+  100% {
+    transform: skew(-5deg); } }
+
+@media screen and (min-width: 768px) {
+  .myname {
+    font-size: 70px;
+    color: #3070df; }
+  .imagenes img {
+    width: 150px; }
+  .programer {
+    font-size: 39.6px;
+    transition: 2s; }
+    .programer .programer:hover {
+      font-size: 66px; } }
+
+@media screen and (min-width: 1000px) {
+  .imagenes img {
+    width: 200px;
+    height: 120px; }
+  .myname {
+    font-size: 80px; }
+  .programer {
+    font-size: 48.4px;
+    transition: 2s; }
+    .programer .programer:hover {
+      font-size: 66px; } }
+
+.encabezado-imagen {
+  margin: 10px;
+  font-size: 33px;
+  font-family: 'square peg';
+  text-align: center; }
+
+.imagen-new {
+  width: 300px; }
+
+.contacto {
+  display: flex;
+  flex-flow: column nowrap; }
+  .contacto ol li {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15.4px;
+    list-style-type: none;
+    font-weight: bold; }
+
+.icons-redes {
+  width: 20px;
+  transform: translate(-30px); }
+
+.imagen-pantalla {
+  width: 300px; }
+
+.reflexion {
+  margin: 20px 20px;
+  text-align: center;
+  font-family: 'Square Peg', cursive;
+  font-size: 22px;
+  background: #f3f3f7;
+  background: linear-gradient(90deg, #f3f3f7 0%, #dae9f1 43%, #f3f7f7 100%); }
+  .reflexion span {
+    color: #c05050; }
+
+@media screen and (min-width: 768px) {
+  .imagen-pantalla {
+    width: 600px; }
+  .imagen-new {
+    width: 450px; }
+  .icons-redes {
+    width: 40px; }
+  .encabezado-imagen {
+    font-size: 44px; }
+  .contacto ol li {
+    font-size: 26.4px; }
+  .reflexion {
+    font-size: 26.4px; } }
+
+@media screen and (min-width: 1000px) {
+  .imagen-pantalla {
+    width: 800px; }
+  .encabezado-imagen {
+    font-size: 66px; }
+  .imagen-new {
+    width: 550px; }
+  .icons-redes {
+    width: 40px;
+    padding: 4px; }
+  .contacto ol li {
+    font-size: 33px; }
+  .reflexion {
+    font-size: 33px; } }

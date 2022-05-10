@@ -9,10 +9,10 @@
     font-size: 95px; }
 
 .programer {
-  font-size: 22px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-align: center;
   color: #189197;
+  font-size: 22px;
   transition: 2s; }
   .programer .programer:hover {
     font-size: 50px; }
@@ -22,7 +22,7 @@
   font-family: 'square peg';
   text-align: center;
   background: #f3f3f7;
-  background: linear-gradient(90deg, #f3f3f7 0%, #dae9f1 43%, #f3f7f7 100%); }
+  background: linear-gradient(90deg, #f3f3f7 0%, #bcdff3 43%, #f3f7f7 100%); }
 
 .imagenes {
   display: flex;
@@ -61,8 +61,8 @@
 
 @media screen and (min-width: 768px) {
   .myname {
-    font-size: 70px;
-    color: #3070df; }
+    color: #3070df;
+    font-size: 70px; }
   .imagenes img {
     width: 150px; }
   .programer {
@@ -83,7 +83,7 @@
     .programer .programer:hover {
       font-size: 66px; } }
 
-.encabezado-imagen {
+.encabezado-imagen, .reflexion {
   margin: 10px;
   font-size: 33px;
   font-family: 'square peg';
@@ -101,20 +101,33 @@
     list-style-type: none;
     font-weight: bold; }
 
-.icons-redes {
-  width: 20px;
-  transform: translate(-30px); }
+.instagram {
+  background-color: #ed8585; }
+
+.facebook {
+  background-color: #5353e6; }
+
+.mail {
+  background-color: #a371b2; }
+
+.git {
+  background-color: #808080; }
+
+.whatsapp {
+  background-color: #8cd18c; }
+
+.img-icon {
+  transform: translate(-40px);
+  width: 40px; }
 
 .imagen-pantalla {
   width: 300px; }
 
 .reflexion {
   margin: 20px 20px;
-  text-align: center;
-  font-family: 'Square Peg', cursive;
   font-size: 22px;
   background: #f3f3f7;
-  background: linear-gradient(90deg, #f3f3f7 0%, #dae9f1 43%, #f3f7f7 100%); }
+  background: linear-gradient(90deg, #f3f3f7 0%, #a6d3ec 43%, #f3f7f7 100%); }
   .reflexion span {
     color: #c05050; }
 
@@ -125,7 +138,7 @@
     width: 450px; }
   .icons-redes {
     width: 40px; }
-  .encabezado-imagen {
+  .encabezado-imagen, .reflexion {
     font-size: 44px; }
   .contacto ol li {
     font-size: 26.4px; }
@@ -135,7 +148,7 @@
 @media screen and (min-width: 1000px) {
   .imagen-pantalla {
     width: 800px; }
-  .encabezado-imagen {
+  .encabezado-imagen, .reflexion {
     font-size: 66px; }
   .imagen-new {
     width: 550px; }

@@ -19,9 +19,17 @@
     }
  
 }
-.icons-redes{
-    width: 20px;
-    transform: translate(-30px);
+$map-redes:(instagram: #ed8585, facebook:#5353e6, mail:#a371b2, git:#808080,whatsapp:#8cd18c);
+@each $red,$color in $map-redes {
+    .#{$red}{
+        
+        background-color: $color;
+    }
+}
+.img-icon{
+    transform: translate(-40px);
+    width: 40px;
+    
 }
 
 .imagen-pantalla {
@@ -29,12 +37,11 @@
     width :300px;
 }
 .reflexion{
+    @extend .encabezado-imagen;
     margin: 20px 20px;
-    text-align: center;
-    font-family:'Square Peg', cursive;
     font-size: $font-s;
     background: rgb(243,243,247);
-    background: linear-gradient(90deg, rgba(243,243,247,1) 0%, rgba(218,233,241,1) 43%, rgba(243,247,247,1) 100%);
+    background: linear-gradient(90deg, rgba(243,243,247,1) 0%, rgb(166, 211, 236) 43%, rgba(243,247,247,1) 100%);
     span{
         color: #c05050;
     }

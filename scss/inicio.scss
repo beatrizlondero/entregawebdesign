@@ -1,5 +1,9 @@
 @charset 'utf-8';
 $font-s: 22px;
+@mixin letra($colorletra,$tamanioletra){
+    color: $colorletra;
+    font-size: $tamanioletra;
+}
 .myname {
     margin: 10px;
     text-align: center;
@@ -14,10 +18,9 @@ $font-s: 22px;
 }    
 
 .programer{
-    font-size: $font-s;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
-    color: #189197;
+    @include letra(#189197,$font-s );
     transition: 2s;
     .programer:hover{
         font-size: 50px;
@@ -30,7 +33,7 @@ $font-s: 22px;
     font-family: 'square peg';
     text-align: center;
     background: rgb(243,243,247);
-    background: linear-gradient(90deg, rgba(243,243,247,1) 0%, rgba(218,233,241,1) 43%, rgba(243,247,247,1) 100%);
+    background: linear-gradient(90deg, rgba(243,243,247,1) 0%, rgb(188, 223, 243) 43%, rgba(243,247,247,1) 100%);
 }
 .imagenes{
     display: flex;
@@ -81,8 +84,7 @@ $font-s: 22px;
 }
 @media screen and (min-width: 768px) {
     .myname {
-        font-size: 70px;
-        color: hsl(218, 73%, 53%);
+        @include letra(#3070df,70px );
         
     }    
     .imagenes{
